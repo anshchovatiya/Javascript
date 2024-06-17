@@ -72,3 +72,13 @@ let ans = number2 + number3;
 
 console.log(number2);
 console.log(ans);
+
+let string = "my name is ansh";
+console.log(typeof string);
+
+string = Array.from(string);
+// console.log(string);
+
+string.forEach((currentelement,index,array) => {
+    console.log(`${currentelement} - ${index}`); 
+});

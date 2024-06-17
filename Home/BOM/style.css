@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    max-width: 1240px;
+    margin: auto;
+    padding-block: 3rem;
+}
+
+.button{
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    margin-block: 2rem;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(33, 32, 32);
+}

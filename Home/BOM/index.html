@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+    <!-- it will work just like anchor tag it will open new tab  -->
+    <h2>This button will work link anchor tag</h2>
+    <button class="button" onclick="window.open('index2.html','_blank')">Click me</button>
+    <!-- this is used to navigate between tags -->
+    <h2>this button will work link forward or backward</h2>
+    <button class="button" onclick="history.back()">Go back</button>
+    <button class="button" onclick="history.forward()">Go forward</button>
+    <h2>This button will reload the page</h2>
+    <button class="button" onclick="location.reload()">Reload</button>
+    <!-- It can only navigate forward it will destroy previous page -->
+    <button class="button" onclick="location.replace('index2.html')">Replace</button>
+    <!-- It can navigate both forward and back  -->
+    <button class="button" onclick="location.assign('index2.html')">Assign</button>
+    X
+  </main>
+    <script src="./practice.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
