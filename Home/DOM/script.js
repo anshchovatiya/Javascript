@@ -72,7 +72,7 @@
 
 //===============================//
     // DOM Searching
-
+{
     // search Element through id 
     let Litag = document.getElementById("firstId");
     console.log(Litag);
@@ -80,6 +80,30 @@
 
     // search element through class
     let para = document.getElementsByClassName('firstClass');
-    console.log(para.innerHTML);
+    console.log(...para);
+    for(let cure of para){
+        console.log(cure);
+        console.log(cure.innerHTML);
+    }
+    let cl = document.getElementsByClassName("division");
+    // console.log(...cl);
+    for(let temp of cl){
+        console.log(temp.innerHTML);
+        // text content does not consider css if display is hidden it will still show that content 
+        console.log(temp.textContent);
+        console.log(temp.innerText);
+    }
+
+
+    // search element through tag name
+    let tag = document.getElementsByTagName("p");
+    console.log(...tag);
+
+
+    // query selector it uses selector special symbols
+    let element = document.querySelector("#first");
+    console.log(element);
+    element.innerText = "this is new text~~~~~~~~~~~~~~~~";
+}
 //===============================//
 
