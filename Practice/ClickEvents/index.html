@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="h-svh bg-slate-900 flex items-center flex-col justify-center">
+      <div class="text-center">
+        <p class="text-white text-4xl py-6">Inline Event</p>
+        <div>
+            <!-- this will activate on single click  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200 greeting" onclick="alert('this is alert message')">greeting</button>
+          <!-- this will activate on double click  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200" ondblclick="alert('this is alert on double click')">greeting again</button>
+          <!-- this will activate on hover  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200" onmouseover="alert('this is alert on double click')">greeting again</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <p class="text-white text-4xl py-6">Event Listner</p>
+        <div>
+            <!-- this will activate on single click  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200 greeting" id="greeting">greeting</button>
+          <!-- this will activate on double click  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200" id="greeting2">greeting again</button>
+          <!-- this will activate on hover  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200" id="greeting3">greeting again</button>
+        </div>
+      </div>
+      <div class="text-center">
+        <p class="text-white text-4xl py-6">Dom Event Handler</p>
+        <div>
+            <!-- this will activate on single click  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200 greeting" id="greet">greeting</button>
+          <!-- this will activate on double click  -->
+          <button class="text-xl py-2  rounded-3xl mx-3 hover:bg-white px-6 bg-yellow-200" id="greet2">greeting again</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
