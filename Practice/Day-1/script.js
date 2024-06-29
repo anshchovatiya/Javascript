@@ -6,6 +6,7 @@ var a = 3;
 console.log(a);
 
 let b = 14;
+console.log(b);
 
 {
     let c = 3;
