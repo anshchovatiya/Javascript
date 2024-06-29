@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="min-h-svh bg-gray-900 p-8 text-white">
+
+        <div class="sum">
+            <p class="text-3xl font-bold">Add two numbers input by the user</p>
+            <div class="mt-4 flex items-center gap-4">
+
+                <div>
+
+                    <label for="number" class="text-2xl">Enter the first number :</label>
+                    <input type="number" name="number" id="sum1"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <div>
+                    <label for="number" class="text-2xl">Enter the second number :</label>
+                    <input type="number" name="number" id="sum2"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <select name="symbol" id="symbol" class="text-black w-[80px]  py-[2px] rounded-lg text-xl">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="/">/</option>
+                    <option value="*">*</option>
+                    <option value="%">%</option>
+                </select>
+                <button id="Submit" class="w-fit py-1 px-6 rounded-full bg-blue-600">Submit</button>
+            </div>
+            <div class="flex mt-3">
+                <p class="text-xl  font-bold">Answer : </p>
+                <p id="output" class="px-5 py-1 bg-blue-900 ml-3 rounded-full"></p>
+            </div>
+        </div>
+        <div class="area-of-rectangel ">
+            <p class="text-3xl font-bold mt-12">Calculate the area of a rectangle</p>
+            <div class="mt-4 flex items-center gap-4">
+
+                <div>
+
+                    <label for="length" class="text-2xl">Enter the length of the rectangle :</label>
+                    <input type="number" name="length" id="length"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <div>
+                    <label for="width" class="text-2xl">Enter the width of the rectangle :</label>
+                    <input type="number" name="width" id="width"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <button id="Submit2" class="w-fit py-1 px-6 rounded-full bg-blue-600">Submit</button>
+            </div>
+            <div class="flex mt-3">
+                <p class="text-xl  font-bold">Answer : </p>
+                <p id="output2" class="px-5 py-1 bg-blue-900 ml-3 rounded-full"></p>
+            </div>
+        </div>
+        <div class="Celsius-to-Fahrenheit ">
+            <p class="text-3xl font-bold mt-12">Convert temperature from Celsius to Fahrenheit</p>
+            <div class="mt-4 flex items-center gap-4">
+                <select name="type" id="type" class="text-black  py-[2px] rounded-lg text-xl w-[150px]">
+                    <option value="Celsius-to-Fahrenheit">Celsius-to-Fahrenheit</option>
+                    <option value="Fahrenheit-to-Celsius">Fahrenheit-to-Celsius</option>
+                </select>
+                <div>
+
+                    <label for="Unit" class="text-2xl" >Enter the value :</label>
+                    <input type="number" name="Unit" id="Unit"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <button id="Submit3" class="w-fit py-1 px-6 rounded-full bg-blue-600">Submit</button>
+            </div>
+            <div class="flex mt-3">
+                <p class="text-xl  font-bold">Answer : </p>
+                <p id="output3" class="px-5 py-1 bg-blue-900 ml-3 rounded-full"></p>
+            </div>
+        </div>
+        <div class="Remainder ">
+            <p class="text-3xl font-bold mt-12">Find the remainder when one number is divided by another</p>
+            <div class="mt-4 flex items-center gap-4">
+
+                <div>
+
+                    <label for="rem1" class="text-2xl">Enter the first value :</label>
+                    <input type="rem1" name="rem1" id="rem1"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <div>
+                    <label for="rem2" class="text-2xl">Enter the second value :</label>
+                    <input type="number" name="rem2" id="rem2"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <button id="Submit4" class="w-fit py-1 px-6 rounded-full bg-blue-600">Submit</button>
+            </div>
+            <div class="flex mt-3">
+                <p class="text-xl  font-bold">Answer : </p>
+                <p id="output4" class="px-5 py-1 bg-blue-900 ml-3 rounded-full"></p>
+            </div>
+        </div>
+        <div class="Power">
+            <p class="text-3xl font-bold mt-12">Calculate the power of a number</p>
+            <div class="mt-4 flex items-center gap-4">
+
+                <div>
+
+                    <label for="pow-num" class="text-2xl">Enter the number :</label>
+                    <input type="number" name="pow-num" id="pow-num"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <div>
+                    <label for="pow-power" class="text-2xl">Enter the Power</label>
+                    <input type="number" name="pow-power" id="pow-power"
+                        class="rounded-full bg-slate-200 ml-5 text-base text-black px-3 py-1">
+                </div>
+                <button id="Submit5" class="w-fit py-1 px-6 rounded-full bg-blue-600">Submit</button>
+            </div>
+            <div class="flex mt-3">
+                <p class="text-xl  font-bold">Answer : </p>
+                <p id="output5" class="px-5 py-1 bg-blue-900 ml-3 rounded-full"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
