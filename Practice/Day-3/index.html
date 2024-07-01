@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: slategray;
+        }
+
+        main {
+            min-height: 100svh;
+            width: 100%;
+            padding: 2rem;
+            color: white;
+        }
+
+        .OddEven {
+            margin: 2rem 0;
+        }
+
+        #oddOrEven,
+        #largeNum1,
+        #largeNum2,
+        #operations1,
+        #operations2,
+        #subject1, #subject2, #subject3,#Sort1, #Sort2,#Sort3{
+            background-color: white;
+            margin-left: 1rem;
+            border-radius: 5px;
+        }
+
+        .font-base {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        h2 {
+            padding-bottom: 1rem;
+        }
+
+        .ansPara {
+            margin: 0.6rem 0;
+            margin-right: 10px;
+        }
+
+        #largeNum1 {
+            margin-bottom: 10px;
+        }
+        #operations1{
+            margin-bottom: 10px;
+        }
+        #subject2,#Sort2{
+            margin: 1rem 0;
+        }
+        button{
+            padding: 5px 30px;
+            background-color: royalblue;
+            margin: 1rem 0;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        .SortNumbers{
+            padding-bottom: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="OddEven">
+            <h2>Check if a number is odd or even in javascript</h2>
+            <label for="number" class="font-base">Enter the number</label>
+            <input type="text" id="oddOrEven" name="number">
+            <p class="ansPara">Ans : <span class="OddEvenAnswer"></span></p>
+        </div>
+        <div class="LargerNumber">
+            <h2>Find the larger of two number</h2>
+            <div>
+                <label for="largeNum1" class="font-base">Enter the first number</label>
+                <input type="number" id="largeNum1" name="largeNum1">
+            </div>
+            <div>
+                <label for="largeNum2" class="font-base">Enter the first number</label>
+                <input type="number" id="largeNum2" name="largeNum2">
+            </div>
+            <button id="LargeNumSubmit">Submit</button>
+            <p class="ansPara">Ans : <span class="LargeNumAns"></span></p>
+        </div>
+        <div class="ArithmeticOperation">
+            <h2>Perform arithmetic operations on two numbers</h2>
+            <div>
+                <label for="operations1" class="font-base">Enter the first number</label>
+                <input type="number" id="operations1" name="operations1">
+            </div>
+            <div>
+                <label for="operations2" class="font-base">Enter the second number</label>
+                <input type="number" id="operations2" name="operations2">
+            </div>
+            <button id="operationsSubmit">Submit</button>
+            <p class="ansPara">Ans : <span class="operationsAns"></span></p>
+        </div>
+    
+        <div class="FindGrades">
+            <h2>Find the grade for input marks</h2>
+            <div>
+                <label for="subject1" class="font-base">Enter the marks of the first subject</label>
+                <input type="number" id="subject1" name="subject1">
+            </div>
+            <div>
+                <label for="subject2" class="font-base">Enter the marks of the first subject</label>
+                <input type="number" id="subject2" name="subject2">
+            </div>
+            <div>
+                <label for="subject3" class="font-base">Enter the marks of the first subject</label>
+                <input type="number" id="subject3" name="subject3">
+            </div>
+       
+            <button id="markSubmit">Submit</button>
+            <p class="ansPara">Ans : <span id="grade"></span></p>
+        </div>
+        <div class="SortNumbers">
+            <h2>Sort three numbers</h2>
+            <div>
+                <label for="Sort1" class="font-base">Enter the first number</label>
+                <input type="number" id="Sort1" name="Sort1">
+            </div>
+            <div>
+                <label for="Sort2" class="font-base">Enter the second number</label>
+                <input type="number" id="Sort2" name="Sort2">
+            </div>
+            <div>
+                <label for="Sort3" class="font-base">Enter the third number</label>
+                <input type="number" id="Sort3" name="Sort3">
+            </div>
+       
+            <button id="SortSubmit">Submit</button>
+            <p class="ansPara">Ans : <span id="SortAns"></span></p>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
