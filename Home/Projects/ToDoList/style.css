@@ -762,6 +762,14 @@ video {
   margin-top: 2rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -883,6 +891,10 @@ video {
 
 .min-h-svh {
   min-height: 100svh;
+}
+
+.min-h-\[500px\] {
+  min-height: 500px;
 }
 
 .w-\[150px\] {

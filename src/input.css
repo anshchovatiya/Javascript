@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer utilities{
 
 .todoContainer{
     @apply flex justify-between items-center text-lg px-3 border-slate-800  border-2  hover:border-[#FFB400] py-3 my-4 rounded-md;
@@ -17,4 +17,9 @@
 
 .todoButton{
     @apply font-normal bg-blue-700 px-2 py-1 rounded-md;
+}
+
+
+
+
 }
