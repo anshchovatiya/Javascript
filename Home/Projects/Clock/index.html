@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            height: 100svh;
+            width: 100%;
+            background-color: rgb(27, 26, 26);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clock{
+             background-color: rgb(83, 67, 67);
+             border-radius: 20px;
+             color: white;
+             display: flex;
+             padding: 1.5rem 3rem;
+             font-size: 3rem;
+             border: 2px solid white;
+             font-weight: 800;
+        }
+        .clock:hover{
+            background-color: rgb(117, 53, 53);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="clock">
+             <div id="hour">00:</div>
+             <div id="minuts">00:</div>
+             <div id="Seconds">00</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
