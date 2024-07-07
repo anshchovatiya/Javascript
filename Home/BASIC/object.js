@@ -18,3 +18,21 @@ for(let x in person){
 person.job = "web developer";
 console.log(person);
 console.log(person.job);
+
+// dynamic key in object
+let key = "name";
+let me = {
+    [key] : "ansh",
+    age : 18,
+    greet : function(){
+        console.log(`hello my name is ${this.name} and my age is ${this.age}`);
+    }
+}
+
+
+me.greet();
+
+
+for(let x in me){
+    console.log(me[x]);
+}
