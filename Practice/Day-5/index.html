@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Methods</title>
+    <title>Student Information</title>
+    <style>
+       .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+       .add-form,.edit-form {
+            width: 40%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+       .result-table {
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
-    <script src="numberMethods.js"></script>
-</body>
-</html>
+    <h1>Student Information</h1>
+    <div class="container">
+        <div class="add-form">
+            <h2>Add Student</h2>
+            <form id="add-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><br>
+                <label for="grade">Grade:</label>
+                <input type="number" id="grade" name="grade"><br><br>
+                <input type="submit" value="Add Student">
+            </form>
+        </div>
+        <div class="edit-form">
+            <h2>Edit Student</h2>
+            <form id="edit-form">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" name="edit-name"><br><br>
+                <label for="edit-age">Age:</label>
+                <input type="number" id="edit-age" name="edit-age"><br><br>
+                <label for="edit-grade">Grade:</label>
+                <input type="number" id="edit-grade" name="edit-grade"><br><br>
+                <input type="submit" value="Edit Student">
+            </form>
+        </div>
+        <div class="result-table">
+            <h2>Student List</h2>
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Grade</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <!-- student list will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // store student data in an array
+        let students = [];
+
+        // add event listener to add form
+        document.getElementById('add-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            let name = document.getElementById('name').value;
+            let age = document.getElementById('age').value;
+            let grade = document.getElementById('grade').value;
+            students.push({ name, age, grade });
+            displayStudents();
+            document.getElementById('add-form').reset();
+        });
+
+        // add event listener to edit form
+        document.getElementById('edit-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            let editName = document.getElementById('edit-name').value;
+            let editAge = document.getElementById('edit-age').value;
+            let editGrade = document.getElementById('edit-grade').value;
+            let index = students.findIndex((student) => student.name === editName);
+            if (index!== -1) {
+                students[index].age = editAge;
+                students[index].grade = editGrade;
+                displayStudents();
+                document.getElementById('edit-form').reset();
+            }
+        });
+
+        // display student list
+        function displayStudents() {
+            let studentList = document.getElementById('student-list');
+            studentList.innerHTML = '';
+            students.forEach((student, index) => {
+                let row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${student.name}</td>
+                    <td>${student.age}</td>`
+            });
+        }
