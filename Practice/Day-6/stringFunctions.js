@@ -5,7 +5,6 @@
 
 const reverseNumber = (number) => {
     number = number + "";
-    // console.log(typeof number);
     number = number.split("");
     number.reverse();
     let ans =  "";
