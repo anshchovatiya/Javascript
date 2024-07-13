@@ -73,7 +73,7 @@ function convertLetterUpperCase(str){
     
 }
 
-console.log(convertLetterUpperCase("my name is ansh"));
+// console.log(convertLetterUpperCase("my name is ansh"));
 
 
 
@@ -82,6 +82,66 @@ console.log(convertLetterUpperCase("my name is ansh"));
 // Example string : 'Web Development Tutorial'
 // Expected Output : 'Development'
 
+
+function findeLongestWord(string){
+    let Array = string.split(" ");
+    
+    let longestWord = "";
+    for(let current of Array){
+        if(current.length > longestWord.length){
+            longestWord = current;
+        }
+    }    return longestWord;
+}
+
+// console.log(findeLongestWord("my name is ansh chovatiya"));  
+
 // 5. Write a JavaScript function that checks whether a number is perfect.
 
 
+function perfectNumber(num){
+    let divsors = [];
+    for(let i = 1; i <num; i++){
+        if(num%i === 0){
+            divsors.push(i);
+        }
+    }
+    let sum = 0;
+    for(let current of divsors){
+        sum += current;
+    }
+
+    if(num === sum){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+// console.log(perfectN
+
+
+
+
+// /**
+//  * @param {number[]} nums1
+//  * @param {number[]} nums2
+//  * @return {number}
+//  */
+// var findMedianSortedArrays = function (nums1, nums2) {
+//     let mergedArray = [];
+//     mergedArray = mergedArray.concat(nums1).concat(nums2).sort((a, b) => a - b);
+//     let len = mergedArray.length;
+
+//     if (len % 2 === 0) {
+//         console.log(len);
+//         let first = len - 1;
+//         let second = first + 1;
+//         sum = mergedArray[first] + mergedArray[second];
+//         return (sum / 2);
+//     }
+//     else {
+//         return mergedArray[Math.trunc(len / 2)];
+//     }
+// };
