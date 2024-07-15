@@ -1,0 +1,76 @@
+@font-face {
+    font-family:"bold" ;
+    src: url(./assets/NeueHaasDisplayBold.ttf);
+}
+@font-face {
+    font-family: "medium";
+    src: url(./assets/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: "light";
+    src: url(./assets/NeueHaasDisplayLight.ttf);
+}
+
+.bold{
+    font-family: "bold";
+}
+.medium{
+    font-family: "medium";
+}
+.light{
+    font-family: "light";
+}
+
+
+.page-container{
+    max-width: 1460px;
+    margin-inline: auto;
+    padding: 1.8rem;
+}
+
+
+.heading-font-size{
+    font-size: clamp(3rem,8vw,10rem);
+    line-height:  clamp(3rem,8vw,10rem);
+}
+
+.normal-text-size{
+    font-size: clamp(1rem,1.2vw,2rem);
+    line-height:  clamp(1rem,1.2vw,2rem);
+}
+
+
+
+
+.drop-menu{
+    position: absolute;
+    background-color:#0da34e;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    padding-right: 4rem;
+    margin-top: 1rem;
+    opacity: 0;
+    scale: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.drop-menu li{
+    margin-bottom: 4px;
+}
+
+.menu-tag{
+    position: relative;
+
+}
+
+.nav-bar-link{
+    font-size: clamp(0.8rem,0.8vw,1rem);
+}
+
+.menu-tag:hover .drop-menu{
+    scale: 1;
+    opacity: 1;
+}
+
