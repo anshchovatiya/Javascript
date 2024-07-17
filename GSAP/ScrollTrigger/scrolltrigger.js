@@ -12,7 +12,7 @@ gsap.from(".innerbox2", {
     scrollTrigger : {
         trigger : ".innerbox2",
         scroller : "body",
-        // markers : true,
+        markers : true,
        start : "top 80%"
     }
     
@@ -28,7 +28,7 @@ gsap.from(".innerbox3", {
     scrollTrigger : {
         trigger : ".innerbox3",
         scroller : "body",
-        // markers : true,
+        markers : true,
        start : "top 80%",
        end : "top 20%"
     }

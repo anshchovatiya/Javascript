@@ -4,9 +4,15 @@
 // });
 
 
-gsap.to(".text",{
-    transform : "translateX(-150%)",
+gsap.to(".heading",{
+    transform : "translateX(-83%)",    
     scrollTrigger : {
-        tirgger : "#box2",
+        trigger : "#box2",
+        // markers : true,
+        scroll : "body",    
+        pin : true ,
+        start : "top 0%",
+        end : "top -100%",
+        scrub  : 1,
     }
 })

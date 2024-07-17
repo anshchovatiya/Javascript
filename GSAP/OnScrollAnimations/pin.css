@@ -6,9 +6,12 @@
 
 
 html,body{
-    height: 100%;
-    width: 100%;
     overflow-x: hidden;
+}
+
+body{
+    height: 300%;
+    overflow-y: hidden;
 }
 
 
@@ -21,17 +24,36 @@ html,body{
     background-color: black;
     display: flex;
     align-items: center;
-
 }
 
 #box2 p{
     color: white;
-    font-size: 500px; 
-    margin-left: 3rem;
+    font-size: 30vw;
     white-space: nowrap;
-
 }
+
 #box3{
     height: 100svh;
     background-color: royalblue;
 }
+
+
+/* .innerbox1{
+    height: 100%;
+    width: 100vw;
+    background-color: yellowgreen;
+}
+.innerbox2{
+    height: 100%;
+    width: 100vw;
+    background-color: crimson;
+}
+.innerbox3{
+    height: 100%;
+    width: 100vw;
+    background-color: royalblue;
+} */
+/* 
+::-webkit-scrollbar{
+    width: 0;
+} */
