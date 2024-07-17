@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #111;
+}
+
+
+.wrapper-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    
+}
+
+h1{
+    overflow: hidden;
+    font-size: 4rem;
+}

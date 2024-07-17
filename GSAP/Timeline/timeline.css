@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #111;
+}
+
+/* main>div{
+    height: 300px;
+    width: 300px;
+}
+
+#box1{
+    background-color: crimson;
+}
+#box2{
+    background-color: royalblue;
+}
+#box3{
+    background-color: yellowgreen;
+} */
+
+main{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    color: white;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+}
+
+ul a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: white;
+}

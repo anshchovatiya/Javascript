@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+main div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box1{
+    background-color: rgba(73, 102, 189, 0.63);
+}
+
+.box2{
+    background-color: rgb(184, 184, 199);
+}
+
+.box3{
+    background-color: navajowhite;
+}
+
+.innerbox1,.innerbox2,.innerbox3{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(129, 76, 76, 0.856);
+    border-radius: 10px;
+}
