@@ -5,14 +5,28 @@
 
 
 gsap.to(".heading",{
-    transform : "translateX(-83%)",    
+    transform : "translateX(calc(-100% + 100vw))",    
     scrollTrigger : {
         trigger : "#box2",
-        // markers : true,
-        scroll : "body",    
-        pin : true ,
+        scrub : 5,
         start : "top 0%",
-        end : "top -100%",
-        scrub  : 1,
+        end : "top -150%",
+        pin : true,
+        scroller : "body",
     }
 })
+
+
+// gsap.to("#box2",{
+//     transform : "translateX(calc(-100% + 100vw))",    
+//     scrollTrigger : {
+//         trigger : "#box2",
+//         scrub : 5,
+//         start : "top 0%",
+//         end : "top -100%",
+//         pin : true,
+//     }
+// })
+
+
+
