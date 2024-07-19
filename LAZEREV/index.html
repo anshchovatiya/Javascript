@@ -23,35 +23,27 @@
     <nav class="py-8 fixed w-full px-12">
         <div class="w-full flex text-white justify-between items-center max-w-[1510px]  m-auto">
             <p class="text-3xl font-bold">LAZAREV.</p>
-            <ul class="flex gap-[1.5vw] nav-bar-link tracking-tight medium">
+            <ul class="hidden lg:flex gap-[1.5vw] nav-bar-link tracking-tight medium">
                 <li>
-                    <a href="#">CASE STUDIES</a>
-           EDIT</a></li>
-                        <li><a href="#">UI DESIGN</a></li>
-                        <li><a href="#">UX DESIGN</a></li>
-                        <li><a href="#">UX RESEARCH</a></li>
-                    </ul>
+                    <a href="#" class="navbarText">CASE STUDIES</a>
                 </li>
-                <li class="menu-tag"><a href="#">PRODUCT DESIGN</a>
-                    <ul class="drop-menu">
-                        <li><a href="#">SASS</a></li>
-                        <li><a href="#">WEB APP</a></li>
-                        <li><a href="#">MOBILE APP</a></li>
-                        <li><a href="#">WEBSITE DESIGN</a></li>
-                    </ul>
+                <li>
+                    <a href="#" class="navbarText">AREAS OF EXPERTISE</a>
                 </li>
-                <li class="menu-tag"><a href="#">DESIGN PROGRESS</a>
-                    <ul class="drop-menu">
-                        <li><a href="#">MVP</a></li>
-                        <li><a href="#">RELAUNCH</a></li>
-                    </ul>
+                <li>
+                    <a href="#" class="navbarText">UI UX DESIGN</a>
                 </li>
-                <li class="menu-tag"><a href="#">ABOUT AGENCY</a>
-                    <ul class="drop-menu">
-                        <li><a href="#">OUT STORY</a></li>
-                        <li><a href="#">CLIENT'S FEEDBACK</a></li>
-                        <li><a href="#">CAREER</a></li>
-                    </ul>
+                <li>
+                    <a href="#" class="navbarText">PRODUCT DESIGN</a>
+                </li>
+                <li>
+                    <a href="#" class="navbarText">DESIGN PROCESS</a>
+                </li>
+                <li>
+                    <a href="#" class="navbarText">ABOUT AGENCY</a>
+                </li>
+                <li>
+                    <a href="#" class="navbarText">CASE STUDIES</a>
                 </li>
             </ul>
             <button
@@ -69,24 +61,48 @@
 
     <!-- main wrapper div starts here  -->
     <div id="main" class="text-white">
-        <div id="page-1" class="page-container h-svh flex justify-center items-center flex-col">
+        <div id="page-1" class="page-container h-svh flex justify-center md:items-center flex-col">
             <!-- tittle of home page  -->
-            <section class="tittle heading-font-size font-bold  lg:text-center heading-style bold">
+            <section class="tittle heading-font-size font-bold  bold">
                 <div class="sm:flex items-center lg:justify-center">
-                    <p class="text-nowrap">AI & ML &#160;</p>
+                    <p class="text-nowrap flex">
+                        <span class="homeTittle">A</span>
+                        <span  class="homeTittle">I</span>
+                        <span>&#160;</span>
+                        <span  class="homeTittle">&</span>
+                        <span>&#160;</span>
+                        <span  class="homeTittle">M</span>
+                        <span  class="homeTittle">L</span>
+                        <span>&#160;</span>
+                    </p>
                     <div class="flex items-center lg:justify-center">
-                        <p>PR</p>
+                        <span class="homeTittle">P</span>
+                        <span class="homeTittle">R</span>
                         <div
-                            class="bg-[#0DA34E] rounded-full w-[6.5vw] h-[6.5vw] max-h-[8rem] max-w-[8rem]  min-h-[2.5rem] min-w-[2.5rem] flex items-center justify-center  hover:scale-90 duration-300 cursor-pointer group">
+                            class="homeTittle circle bg-[#0DA34E] rounded-full aspect-square w-[6.5vw] max-h-[8rem] max-w-[8rem]  min-h-[2.5rem] min-w-[2.5rem] flex items-center justify-center  cursor-pointer group">
                             <img src="./assets/pencil-edit-button-svgrepo-com.svg" alt="pencil icon"
                                 class="h-[2.5vw] min-h-[1.2rem] group-hover:rotate-[-30deg] duration-300">
                         </div>
-                        <p>JECT</p>
+                        <span class="homeTittle">J</span>
+                        <span class="homeTittle">E</span>
+                        <span class="homeTittle">C</span>
+                        <span class="homeTittle">T</span>
                     </div>
                 </div>
                 <div class="sm:flex lg:justify-center">
-                    <p>DESIGN &#160;</p>
-                    <p> AGENCY</p>
+                    <span class="homeTittle">D</span>
+                    <span class="homeTittle">E</span>
+                    <span class="homeTittle">S</span>
+                    <span class="homeTittle">I</span>
+                    <span class="homeTittle">G</span>
+                    <span class="homeTittle">N</span>
+                    <span>&#160;</span>
+                    <span class="homeTittle">A</span>
+                    <span class="homeTittle">G</span>
+                    <span class="homeTittle">E</span>
+                    <span class="homeTittle">N</span>
+                    <span class="homeTittle">C</span>
+                    <span class="homeTittle">Y</span>
                 </div>
             </section>
             <!-- description of home page  -->
@@ -107,6 +123,9 @@
     <!-- main wrapper div ended here  -->
 
     <!-- javascript files links  -->
+
+    <!-- gsap cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- locomotive js javascript cdn link  -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <!-- main script file link -->

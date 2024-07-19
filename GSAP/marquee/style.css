@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+main{
+    background-color: #111;
+}
+
+main>div{
+    height: 100vh;
+}
+
+.marqueeContainer{
+    min-height: 10vh;
+    width: 100%;
+    background: rgb(230, 233, 78);
+    display: flex;
+    align-items: center;
+    padding:2vw;
+    overflow: hidden;
+}
+
+.content{
+    font-size: 70px;
+    font-weight: 600;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-shrink: 0;
+    /* transform: translateX(-100%); */
+}
+
+.content img{
+ 
+    height: 120px;
+}
