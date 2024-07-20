@@ -20,36 +20,30 @@ let tl  = gsap.timeline();
 
 tl.to(".slider", {
   height: "175%",
-  duration: 1,
+  duration: 0.3,
 });
 
 tl.to(".navlist",{
     display : "block",
 })
 
-tl.from(".option span",{ 
-//    opacity : 0,
-   x : 500,
-   duration : 4,
+  // tl.from(".option span",{ 
+  //    opacity : 0,
+  //    y : 80,
+  //    duration : 0.5,
+  //    stagger : 0.3  
+  // })
+
+tl.pause(); 
+
+
+
+document.querySelector(".navList").addEventListener("mouseover",()=>{
+  tl.play();
 })
-
-
-tl.pause();
-
-document.querySelectorAll(".navbarText").forEach((current)=>{
-    current.addEventListener("mouseover", () => {
-        tl.play();
-    });
+document.querySelector(".navList").addEventListener("mouseleave",()=>{
+  tl.reverse();
+  
 })
-
-
-
-
-
-document.querySelector(".slider").addEventListener("mouseleave", () => {
-    tl.reverse();
-});
-
-
 
 
