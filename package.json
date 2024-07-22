@@ -10,5 +10,8 @@
   "description": "",
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "locomotive-scroll": "^5.0.0-beta.13"
   }
 }
