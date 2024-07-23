@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "fright";
+    src: url(./assets/Freight\ Big\ Pro\ Light.otf);
+}
+
+@font-face {
+    font-family: "fright-italic";
+    src: url(./assets/Freight\ Big\ Pro\ Light\ Italic.otf);
+}
+
+@font-face {
+    font-family: "neue";
+    src: url(./assets/NeueHaasDisplayRoman.ttf);
+}
+
+
+.font-fright{
+    font-family: "fright",sans-serif;
+}
+.font-fright-italic{
+    font-family: "fright-italic",sans-serif;
+}
+.font-neue{
+    font-family: "neue",sans-serif;
+}
