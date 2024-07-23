@@ -28,7 +28,6 @@ async function fetchApiData(cityName) {
         let link = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=5de6e6e1ecb58b89dda409772caf2ea2`
         let weatherApi = await fetch(link);
         let data = await weatherApi.json();
-        console.log(data);
 
         let { dt, main, name, sys, weather, wind } = data;
 
@@ -53,16 +52,12 @@ async function fetchApiData(cityName) {
 
        temprature = main.feels_like - 273.15;
         document.getElementById("FeelsLike").innerHTML = `${temprature.toFixed(2)}&deg;`;
-
-
-        
         document.getElementById("Humidity").innerHTML = `${main.humidity}&percnt;`;
         document.getElementById("windSpeed").innerHTML = `${wind.speed} m&#x2f;s`;
         document.getElementById("pressure").innerHTML = `${main.pressure} mb`;
 
     } catch (error) {
         document.querySelector(".city_name").innerHTML = `Info not available`;
-
     }
 }
 
