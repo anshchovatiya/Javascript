@@ -7,21 +7,36 @@
 
 const navBarOptions = document.querySelector(".nav-options");
 const navPlus = document.querySelector(".nav-plus")
+const navBarTimeline = gsap.timeline();
 
+navBarTimeline.to(".nav-plus", {    
+    rotate: 0,
+},"nav")
 
-document.querySelector(".nav-plus").addEventListener("click",()=>{
+navBarTimeline.to(".nav-options", {
+    right: "0",
+    ease: "power1.out",
+},"nav")
 
+navBarTimeline.from(".nav-options .option",{
+    x : 80,
+    stagger : -0.3,
+    ease: "power1.out",
+    duration : 0.7,
+    opacity : 0,
+},"-=0.4")
 
-    if(navPlus.getAttribute("data-active")==="true"){
-        
+navBarTimeline.pause();
+
+document.querySelector(".nav-plus").addEventListener("click", () => {
+
+    if (navPlus.getAttribute("data-active") === "false") {
+        navPlus.setAttribute("data-active", "true");
+        navBarTimeline.play();
+
     }
-
-    gsap.to(".nav-plus",{
-        rotate : 45,
-    })
-
-    gsap.to(".nav-options",{
-        right : 0,
-    })
-    
+    else if (navPlus.getAttribute("data-active") === "true") {
+        navPlus.setAttribute("data-active", "false")
+       navBarTimeline.reverse();
+    }
 })

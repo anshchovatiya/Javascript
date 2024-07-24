@@ -25,3 +25,11 @@ document.querySelector(".image").addEventListener("mouseout",()=>{
         backgroundColor : "#FFB400",
     })
 })
+
+window.addEventListener("resize",()=>{
+    gsap.to(cursor,{
+        x : 0,
+        y : 0,
+       
+    })
+})
