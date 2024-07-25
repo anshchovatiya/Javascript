@@ -667,8 +667,16 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.left-1 {
+  left: 0.25rem;
+}
+
 .left-2 {
   left: 0.5rem;
+}
+
+.top-1 {
+  top: 0.25rem;
 }
 
 .top-2 {
@@ -697,6 +705,10 @@ video {
 
 .z-40 {
   z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-start {

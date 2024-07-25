@@ -1,9 +1,9 @@
-// import LocomotiveScroll from './node_modules/locomotive-scroll';
 
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector("main"),
-//     smooth: true,
-// });
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector("#main"),
+    smooth: true,
+});
 
 const navBarOptions = document.querySelector(".nav-options");
 const navPlus = document.querySelector(".nav-plus")
