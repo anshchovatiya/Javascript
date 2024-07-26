@@ -1,0 +1,8 @@
+
+
+.bg-gradient{
+    background: #B993D6;
+    background: -webkit-linear-gradient(to right, #6982b6, #B993D6);  
+    background: linear-gradient(to right, #8CA6DB, #B993D6);
+}
+
