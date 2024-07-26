@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="custom.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="bg-gradient h-svh flex justify-center items-center">
-      <div
-        class="h-[520px] w-[450px] bg-[#ffffff17] text-xl text-white rounded-2xl shadow-lg overflow-hidden grid grid-rows-[13%_90%]"
-      >
-        <div id="output" class="px-8 pr-12 py-4 text-end text-2xl"></div>
-        <div
-          class="grid grid-rows-5 grid-cols-4 place-items-center pb-3 cursor-pointer"
-        >
-          <div><p id="deleteAll">AC</p></div>
-          <div><p id="deleteLast">DEL</p></div>
-          <div class="Out"><p  id="%">%</p></div>
-          <div class="Out"><p  id="/">/</p></div>
-          <div class="Out"><p  id="7">7</p></div>
-          <div class="Out"><p  id="8">8</p></div>
-          <div class="Out"><p  id="9">9</p></div>
-          <div class="Out"><p  id="*">*</p></div>
-          <div class="Out"><p  id="4">4</p></div>
-          <div class="Out"><p  id="5">5</p></div>
-          <div class="Out"><p  id="6">6</p></div>
-          <div class="Out"><p  id="-">-</p></div>
-          <div class="Out"><p  id="1">1</p></div>
-          <div class="Out"><p  id="2">2</p></div>
-          <div class="Out"><p  id="3">3</p></div>
-          <div class="Out"><p  id="+">+</p></div>
-          <div class="Out"><p  id="0">0</p></div>
-          <div class="Out"><p  id="00">00</p></div>
-          <div class="Out"><p  id=".">.</p></div>
-          <div><p id="isEqualTo">=</p></div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .bg-gradient{
+        background: #B993D6;
+        background: -webkit-linear-gradient(to right, #6982b6, #B993D6);  
+        background: linear-gradient(to right, #8CA6DB, #B993D6);
+    }
+    
+    main{
+        padding: 2rem;
+    }</style>
+
+</head>
+
+<body>
+  <main class="bg-gradient h-svh flex justify-center items-center">
+    <div
+      class="h-[550px] w-[450px] bg-[#ffffff17] text-xl text-white rounded-2xl shadow-lg overflow-hidden grid grid-rows-[22%_78%] pb-3">
+      <div class="px-8 pr-12  pt-8 text-end overflow-x-hidden">
+        <div id="outputSmall" class=" text-xl"></div>
+        <div id="output" class=" text-2xl mt-1"></div>
       </div>
-    </main>
-    <script src="script.js"></script>
-  </body>
+
+      <div class="grid grid-rows-5 grid-cols-4 place-items-center cursor-pointer *:h-full *:w-full">
+        <button class="w-full h-full">
+          <p id="deleteAll">AC</p>
+        </button>
+        <button class="w-full h-full">
+          <p id="deleteLast">DEL</p>
+        </button>
+        <button class=" w-full h-full">
+          <p id="%" class="symbol">%</p>
+        </button>
+        <button class=" w-full h-full">
+          <p id="/" class="symbol">/</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="7">7</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="8">8</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="9">9</p>
+        </button>
+        <button class=" w-full h-full">
+          <p id="*" class="symbol">*</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="4">4</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="5">5</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="6">6</p>
+        </button>
+        <button class=" w-full h-full">
+          <p id="-" class="symbol">-</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="1">1</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="2">2</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="3">3</p>
+        </button>
+        <button class=" w-full h-full">
+          <p id="+" class="symbol">+</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="0">0</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id="00">00</p>
+        </button>
+        <button class="Out w-full h-full">
+          <p id=".">.</p>
+        </button>
+        <button class="w-full h-full">
+          <p id="isEqualTo">=</p>
+        </button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>

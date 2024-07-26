@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bg-gradient {
+            background-color: #21D4FD;
+            background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="bg-gradient h-svh flex justify-center items-center px-8">
+        <div class="h-[600px] max-w-[500px] bg-[#ffffff1f] p-8">
+            <div class="md:flex gap-4  text-center">
+                <input type="number" id="length" min="0" placeholder="Enter length of the string"
+                    class="rounded-lg px-4 py-1 flex-0">
+                <button class="py-2 px-8 bg-blue-400 rounded-full text-white mt-4 md:mt-0" id="Generate">Generate String</button>
+            </div>
+            <div class="text-white py-10 px-2 text-lg max-h-[500px] overflow-auto" id="StringContainer">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
