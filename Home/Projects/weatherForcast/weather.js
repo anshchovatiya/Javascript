@@ -63,13 +63,6 @@ async function fetchApiData(cityName) {
 
 fetchApiData("surat");
 
-
-
-
-
-
-
-
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     fetchApiData(cityName.value);
