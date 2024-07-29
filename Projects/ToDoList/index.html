@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-slate-200">
-    <main class="max-w-screen-xl m-auto font-[Poppins]">
-      <h1 class="text-4xl font-semibold my-8">Sticky Wall</h1>
-      <div id="notes" class=" grid grid-cols-3">
-       fplan promotion and distribution</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#111]">
+  <main class="max-w-screen-xl m-auto font-[Poppins]">
+    <h1 class="text-4xl font-semibold mt-8  p-4 sm:p-8 text-white">Sticky Wall</h1>
+    <div id="notes" class="grid grid-cols-1  p-4 sm:p-8 lg:grid-cols-3 gap-4 md:gap-8">
+      <!-- info box started -->
+      <div class="box p-4 md:p-8 bg-blue-500 rounded-lg md:aspect-[2/1.7] relative
+      text-wrap break-words" contenteditable="false">
+        <p class="text-xl font-bold max-w-[calc(100%-75px)] px-1 text-ellipsis overflow-x-hidden">Social Media</p>
+        <p class=" pb-4 text-sm w-fit px-1">29/07/2024</p>
+        <pre class="font-[Poppins] px-1 text-wrap text-ellipsis overflow-x-hidden max-w-full">
+- Plan social content
+- Build content calender
+- Plan promotion and distribution
+        </pre>
+        <div class="absolute top-5 md:top-9 right-8 cursor-pointer text-2xl" contenteditable="false">
+          <i class="fa-solid fa-pen-to-square  mr-4 editable"></i>
+          <i class="fa-solid fa-trash hover:text-white noteDelete"></i>
+        </div>
+
+      </div>
+      <!-- info box ended -->
+      <!-- input field started  -->
+      <div id="InputField" class="box p-4 md:p-8 bg-blue-500 rounded-lg md:aspect-[2/1.7] relative hidden">
+        <input class="text-xl font-bold bg-transparent placeholder:text-[#0000008a] placeholder:font-medium w-full"
+          placeholder="Enter the tittle" id="tittle" type="text">
+        <input id="date" class=" mb-4 text-sm bg-transparent placeholder:text-[#0000008a] w-full"
+          placeholder="Enter the Date" type="date">
+        <textarea name="description" id="description"
+          class=" placeholder:text-[#0000008a] w-full min-h-[80px] py-2 px-3 rounded-xl"
+          placeholder="Enter the Description"></textarea>
+        <div class="absolute bottom-8 right-8 cursor-pointer text-2xl">
+          <i id="inputDone" class="fa-solid fa-check hover:text-white mr-4"></i>
+          <i id="inputDelete" class="fa-solid fa-trash hover:text-white"></i>
         </div>
       </div>
-    </main>
-    <script src="script.js"></script>
-  </body>
+      <!-- input field ended -->
+      <!-- plus box started  -->
+      <div id="addNote"
+        class="box p-4 md:p-8 bg-blue-500 rounded-lg flex justify-center items-center group cursor-pointer min-w-[270px] md:aspect-[2/1.7]">
+        <i class="fa-solid fa-plus text-6xl group-hover:text-white"></i>
+      </div>
+      <!-- plus box ended -->
+
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
 </html>
