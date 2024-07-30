@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="max-w-screen-xl m-auto">
+        <h1 class="text-4xl md:text-6xl my-10 text-center font-semibold">Budget App</h1>
+        <form class="xl:flex justify-between items-center p-5">
+            <label for="TotalBuget" class="sm:flex gap-4 items-center max-xl:mb-4">
+                <p class="text-base md:text-lg font-semibold text-nowrap">Your Budget</p>
+                <div class="flex ">
+                    <input type="text" id="TotalBudget" name="TotalBudget"
+                        class="border-2 border-[#0000002a] rounded-l-[4px] border-r-0 px-2 max-w-[45vw]">
+                    <button class="px-5 text-white rounded-r-[4px] bg-[#111] text-nowrap max-w-full max-sm:text-sm"
+                        id="BudgetSubmit">Set
+                        Budget</button>
+                </div>
+            </label>
+            <div class="md:flex gap-4">
+                <label for="Description" class="sm:flex gap-4 ">
+                    <p class="text-lg font-semibold text-nowrap">Expenses Details</p>
+                    <input type="text" id="Description" name="Description"
+                        class="border-2 border-[#0000002a] rounded-[4px]  px-2   max-sm:w-full">
+                </label>
+                <label for="Expense" class="flex max-md:mt-4 ">
+
+                    <input type="text" id="Expense" name="Expense"
+                        class="border-2 border-[#0000002a] rounded-l-[4px] border-r-0 px-2 max-w-[45vw]">
+                    <button id="ExpenseSubmit"
+                        class="px-5 text-white rounded-r-[4px] bg-[#111] text-nowrap max-sm:text-sm">Add
+                        Expenses</button>
+                </label>
+
+
+
+            </div>
+        </form>
+        <div class="grid md:grid-cols-3 mt-4 md:mt-10 gap-2 sm:gap-5 lg:gap-10 p-5">
+            <div class="flex bg-slate-200 p-8 gap-5 rounded-md">
+                <div class="flex justify-center items-center bg-blue-300 p-4 rounded-md aspect-square">
+                    <i class="fa-solid fa-landmark text-2xl"></i>
+                </div>
+                <div>
+                    <p class=" text-xl lg:text-3xl flex gap-1"><span>&#x20B9;</span><span class="font-bold"
+                            id="BudgetShow">100</span></p>
+                    <p class="text-[#00000081] font-semibold">Budget</p>
+                </div>
+            </div>
+            <div class="flex bg-slate-200 p-8 gap-5 rounded-md">
+                <div class="flex justify-center items-center bg-yellow-300 p-4 px-5 rounded-md aspect-square">
+                    <i class="fa-solid fa-receipt text-2xl"></i>
+                </div>
+                <div>
+                    <p class=" text-xl lg:text-3xl gap-1 flex"><span>&#x20B9;</span><span
+                            class="  inline-block font-bold" id="ExpensesShow">30</span>
+                    </p>
+                    <p class="text-[#00000081] font-semibold">Expenses</p>
+                </div>
+            </div>
+            <div class="flex bg-slate-200 p-8 gap-5 rounded-md">
+                <div class="flex justify-center items-center bg-green-400 p-4 rounded-md aspect-square">
+                    <i class="fa-solid fa-wallet text-2xl"></i>
+                </div>
+                <div>
+                    <p class=" text-xl lg:text-3xl gap-1 flex"><span>&#x20B9;</span><span
+                            class="  inline-block font-bold" id="BalanceShow">70</span>
+                    </p>
+                    <p class="text-[#00000081] font-semibold">Balance</p>
+                </div>
+            </div>
+
+        </div>
+        <div class=" min-h-[300px] p-5">
+            <div class=" bg-slate-200 rounded-md p-2 md:p-8">
+                <h2 class="text-4xl font-bold tracking-tight">Budget Details</h2>
+                <div class="mt-5 lg:mt-10 grid gap-2" id="ExpenseHistory">
+                    <div
+                        class="bg-[#111] w-full grid grid-cols-[10%_70%_20%] sm:grid-cols-[60%_25%_15%] text-white py-1 px-2 rounded-[4px]" contenteditable="false">
+                        <p>Gaming Keyboard</p>
+                        <p>&#x20B9;30</p>
+                        <div class="cursor-pointer flex flex-nowarp items-center max-sm:my-2  sm:justify-end mr-3">
+                            <i class="fa-solid fa-pen-to-square  mr-4 editable"></i>
+                            <i class="fa-solid fa-trash hover:text-blue-600 noteDelete"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
