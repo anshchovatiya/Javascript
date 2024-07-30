@@ -9,19 +9,23 @@ let string = localStorage.getItem("NoteArray");
 NoteArray = JSON.parse(string);
 
 
+if(NoteArray!==null){
 
-NoteArray.forEach((current) => {
-    let div = document.createElement("div");
-    div.innerHTML = `<p class="text-xl font-bold max-w-[calc(100%-75px)] px-1 text-ellipsis overflow-x-hidden">${current.tittle}</p>
-        <p class=" pb-4 text-sm w-fit px-1">${current.date}</p>
-        <pre class="font-[Poppins] px-1 text-wrap text-ellipsis overflow-x-hidden max-w-full">${current.description}</pre>
-        <div class="absolute top-5 md:top-9 right-8 cursor-pointer text-2xl" contenteditable="false">
-          <i class="fa-solid fa-pen-to-square  mr-4 editable"></i>
-          <i class="fa-solid fa-trash hover:text-white noteDelete"></i>
-        </div>`;
-    div.classList = "box p-4 md:p-8 bg-blue-500 rounded-lg md:aspect-[2/1.7] relative overflow-x-hidden";
-    notesSection.insertBefore(div, inputField);
-});
+
+    
+    NoteArray.forEach((current) => {
+        let div = document.createElement("div");
+        div.innerHTML = `<p class="text-xl font-bold max-w-[calc(100%-75px)] px-1 text-ellipsis overflow-x-hidden">${current.tittle}</p>
+            <p class=" pb-4 text-sm w-fit px-1">${current.date}</p>
+            <pre class="font-[Poppins] px-1 text-wrap text-ellipsis overflow-x-hidden max-w-full">${current.description}</pre>
+            <div class="absolute top-5 md:top-9 right-8 cursor-pointer text-2xl" contenteditable="false">
+              <i class="fa-solid fa-pen-to-square  mr-4 editable"></i>
+              <i class="fa-solid fa-trash hover:text-white noteDelete"></i>
+            </div>`;
+        div.classList = "box p-4 md:p-8 bg-blue-500 rounded-lg md:aspect-[2/1.7] relative overflow-x-hidden";
+        notesSection.insertBefore(div, inputField);
+    });
+}
 
 
 
