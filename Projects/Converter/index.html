@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-purple-600  font-['Poppins'] select-none">
+    <main class="max-w-screen-xl m-auto flex justify-center items-center h-svh p-4">
+        <div class="w-[500px] h-[500px] bg-white rounded-xl p-4">
+            <div class="flex justify-center items-center flex-col relative -top-14 h-[110px] gap-4">
+                <img src="assets/units-convert-logo-removebg-preview.png" alt="convert logo" class="h-full">
+                <p class="text-3xl font-semibold">CONVERT UNITS</p>
+            </div>
+
+            <form class="w-full flex flex-col">
+                <input type="text"
+                    class="text-black py-1 px-3 bg-[#ffffffad] flex-1 focus:outline-none border-b-2 border-blue-600 pb-2 w-fulll mb-5"
+                    placeholder="Enter the value" id="input" id="input">
+                <div class="bg-purple-600 flex-1 relative cursor-pointer rounded-[4px] overflow-hidden">
+                    <select name="type" id="type"
+                        class="w-full focus:outline-none  appearance-none py-2  text-white relative bg-purple-600 px-3 cursor-pointer" placeholder="select">
+                        <option value="" disabled selected >select</option>
+                        <option value="Celsius-to-Fahrenheit">Celsius-to-Fahrenheit</option>
+                        <option value="Fahrenheit-to-Celsius">Fahrenheit-to-Celsius</option>
+                        <option value="Factorial">Factorial</option>
+                        <option value="meter-to-centimeter">meter-to-centimeter</option>
+                        <option value="centimeter-to-meter">centimeter-to-meter</option>
+                        <option value="foot-to-inch">foot-to-inch</option>
+                        <option value="inch-to-foot">inch-to-foot</option>
+
+                    </select>
+                    <div class="flex justify-end absolute w-full h-full inset-0 items-center px-3 text-white pointer-events-none">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <button class="mt-8 px-6 py-2 bg-purple-600 w-fit m-auto text-white rounded-[4px]" id="sub">Convert</button>
+            </form>
+            <div class="mt-7 min-h-[100px] overflow-auto bg-purple-100 rounded-[4px]  flex justify-center items-center px-4 py-4">
+                <p id="results" class="text-3xl font-semibold select-text">Units</p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

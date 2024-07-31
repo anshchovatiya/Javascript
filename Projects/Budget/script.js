@@ -56,7 +56,7 @@ document.getElementById("ExpenseSubmit").addEventListener("click", (event) => {
     }
 });
 
-let valueHolder;
+
 document.getElementById("ExpenseHistory").addEventListener("click", (event) => {
     if (event.target.classList.contains("noteDelete")) {
         let exp = event.target.parentElement.previousElementSibling.innerText;
@@ -70,6 +70,8 @@ document.getElementById("ExpenseHistory").addEventListener("click", (event) => {
         document.getElementById("BalanceShow").innerText = Balance;
         event.target.parentElement.parentElement.remove();
     }
+
+
     if (event.target.classList.contains("editable")) {
         if (event.target.parentElement.parentElement.getAttribute("contenteditable") === "true") {
             event.target.parentElement.parentElement.setAttribute("contenteditable", "false");
@@ -81,8 +83,9 @@ document.getElementById("ExpenseHistory").addEventListener("click", (event) => {
             exp = exp.join("");
             exp = +exp;
 
+            var valueHolder =  event.target.getAttribute("data-previous");
+            valueHolder = +valueHolder;
             if(Number.isInteger(exp)){
-
                 Expenses -= valueHolder;
                 Balance += valueHolder;
     
@@ -101,12 +104,12 @@ document.getElementById("ExpenseHistory").addEventListener("click", (event) => {
             event.target.parentElement.parentElement.setAttribute("contenteditable", "true");
             event.target.style.color = "royalblue";
 
-
-            valueHolder = event.target.parentElement.previousElementSibling.innerText;
+            let valueHolder = event.target.parentElement.previousElementSibling.innerText;
             valueHolder = valueHolder.split("");
             valueHolder.shift();
             valueHolder = valueHolder.join("");
             valueHolder = +valueHolder;
+            event.target.setAttribute("data-previous",valueHolder);
         }
     }
 
