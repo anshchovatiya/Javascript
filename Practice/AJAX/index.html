@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <h1>This is placeholder text</h1>
+    <button id="Button">Change</button>
+    <script>
+        document.getElementById("Button").addEventListener("click",()=>{
+
+            let xHttps = new XMLHttpRequest();
+    
+            xHttps.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.querySelector("h1").innerText = this.responseText;
+                }
+            }
+    
+            xHttps.open("GET","ajax.text",true);
+            xHttps.send();
+        });
+    </script>
+</body>
+</html>
